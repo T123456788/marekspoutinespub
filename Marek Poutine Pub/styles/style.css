@@ -1,0 +1,238 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Monteserrat", sans-serif;
+  background-color: #6b4e71;
+}
+
+/* Header Styles */
+
+header {
+  padding: 1.875rem 3rem;
+  /* background-color: #6B4E71; */
+  background-image: url("../Images/pizza.jpg");
+  background-size: cover;
+  color: #b2cede;
+  text-align: center;
+}
+
+.toggle-button {
+  display: none;
+}
+h1 {
+  font-size: 4rem;
+  background-color: #6b4e71cb;
+}
+
+header h2 {
+  font-size: 1.28rem;
+  background-color: #6b4e71cb;
+}
+
+
+
+
+/* Nav Styles */
+
+nav {
+  background-color: #6b4e71;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  color: #b2cede;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: background-color 500ms ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #0e3b43;
+}
+
+/* Main Styles */
+
+main {
+  color: #b2cede;
+  margin: 0 5%  ;
+
+
+  
+}
+/* Table style */
+table {
+  width: 100%;
+  align-items: center;
+  padding: .5rem;
+  text-align: center;
+  border-spacing:0;
+  border-collapse: collapse;
+  
+}
+
+caption {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+
+th {
+  background-color: #917f94cb;
+}
+
+th:first-child {
+  width: 60%;
+}
+
+tr:nth-child(even) {
+  background-color: #0e3b43;
+
+  
+}
+  
+tr:nth-child(odd){
+  background-color: #917f94cb;
+}
+th,
+td {
+  padding: 0.5rem;
+}
+
+th:hover,
+td:hover{
+  color: #e98a15;
+}
+
+
+/* Section Styles */
+.section-header{
+display: flex;
+}
+section {
+
+  background-color: #0e3b43;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem ;
+  padding-bottom: 1.6rem;
+
+}
+
+.flex-section {
+  display: flex;
+  align-items: center;
+}
+
+.flex-image {
+  width: 50%;
+  padding: 3rem;
+}
+
+.flex-image img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.flex-image iframe {
+  width: 100%;
+}
+
+.flex-content {
+  width: 50%;
+  padding: 3rem;
+  text-align: center;
+}
+
+.reverse-flex {
+  flex-direction: row-reverse;
+}
+
+/* Footer Styles */
+
+footer {
+  text-align: center;
+  color: #b2cede;
+  padding: 0.5rem 0;
+}
+footer a {
+  font-size: 1.5rem;
+  color: #b2cede;
+  margin: 0.25rem 1rem;
+}
+
+@media screen and (max-width: 426px) {
+  header {
+    width: 100%;
+    position: relative;
+  }
+  .toggle-button {
+    display: block;
+    position: absolute;
+    background-color: #6b4e71cb;
+    left: 1%;
+    top: 50%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0 0.75rem 0.75rem 0;
+    transform: translateY(-50%) scaleY(80%);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  header h2 {
+    font-size: 1.28rem;
+  }
+  nav {
+    height: 0;
+    overflow: hidden;
+    transition: height 500ms ease-in-out;
+  }
+  .nav-visible {
+    height: 18rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav-link {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .flex-section {
+    flex-direction: column;
+  }
+  .flex-content,
+  .flex-image {
+    padding: 0.5rem;
+    width: 90%;
+  }
+  section h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  section h3 {
+    font-size: 1rem;
+    margin: 0.25rem 0;
+  }
+  section p {
+    font-size: 0.75rem;
+  }
+  footer {
+    font-size: 0.5rem;
+  }
+}
